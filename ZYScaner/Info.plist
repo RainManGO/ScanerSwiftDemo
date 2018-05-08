@@ -41,7 +41,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSBluetoothPeripheralUsageDescription</key>
-	<string></string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>photo</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>photo</string>
+	<key>NSCameraUsageDescription</key>
+	<string>cream</string>
 </dict>
 </plist>

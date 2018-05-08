@@ -20,6 +20,16 @@ class ZYScanViewController: LBXScanViewController {
      */
     var isOpenedFlash:Bool = false
     
+    /**
+     @brief  描边颜色
+     */
+    var angleColor:UIColor = UIColor.blue
+    
+    /**
+     @brief  动画照片
+     */
+    var lineImage:UIImage?
+    
     // MARK: - 底部几个功能：开启闪光灯、相册、我的二维码
     
     //底部显示的功能项
@@ -110,11 +120,10 @@ extension ZYScanViewController {
         lbxStyle.photoframeAngleW = 30
         lbxStyle.photoframeAngleH = 30
         lbxStyle.isNeedShowRetangle = false
-        lbxStyle.colorAngle = UIColor.colorFromRGB(0xfdd000)
+        lbxStyle.colorAngle = angleColor
         lbxStyle.anmiationStyle = LBXScanViewAnimationStyle.LineMove
         
-        let image = UIImage.init(named: "qrcode_scan_light_green")
-        lbxStyle.animationImage = image
+        lbxStyle.animationImage = lineImage
         lbxStyle.color_NotRecoginitonArea = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.6)
         
         return lbxStyle

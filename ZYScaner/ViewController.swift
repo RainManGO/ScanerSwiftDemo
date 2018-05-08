@@ -23,6 +23,28 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func buttonClick(_ sender: UIButton) {
+        if isSimulator() {
+            print("在真机进行测试")
+            return
+        }
 
+        let scanVc = ZYScanViewController()
+        scanVc.topTitle?.text = "二维码放入框中，自动扫描"
+        scanVc.angleColor = UIColor.colorFromRGB(0xfdd000)
+        scanVc.lineImage = UIImage.init(named: "qrcode_scan_light_green")
+        self.navigationController?.pushViewController(scanVc, animated: false)
+    }
+    
+    
+    func isSimulator() ->Bool {
+        var isSim = false
+        #if arch(i386) || arch(x86_64)
+        isSim = true
+        #endif
+        return isSim
+    }
+    
 }
+
 
