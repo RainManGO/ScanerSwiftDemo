@@ -12,6 +12,14 @@
 		EB73B8B42094098F00325ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB73B8B22094098F00325ECA /* Main.storyboard */; };
 		EB73B8B62094099100325ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB73B8B52094099100325ECA /* Assets.xcassets */; };
 		EB73B8B92094099100325ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB73B8B72094099100325ECA /* LaunchScreen.storyboard */; };
+		EB8A1AB020A137FC000AEAED /* LBXScanNetAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8A1AA920A137FB000AEAED /* LBXScanNetAnimation.swift */; };
+		EB8A1AB120A137FC000AEAED /* LBXScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8A1AAA20A137FB000AEAED /* LBXScanViewController.swift */; };
+		EB8A1AB220A137FC000AEAED /* LBXScanWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8A1AAB20A137FB000AEAED /* LBXScanWrapper.swift */; };
+		EB8A1AB320A137FC000AEAED /* LBXScanViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8A1AAC20A137FB000AEAED /* LBXScanViewStyle.swift */; };
+		EB8A1AB420A137FC000AEAED /* LBXScanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8A1AAD20A137FB000AEAED /* LBXScanView.swift */; };
+		EB8A1AB520A137FC000AEAED /* LBXScanLineAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8A1AAE20A137FB000AEAED /* LBXScanLineAnimation.swift */; };
+		EB8A1AB620A137FC000AEAED /* LBXPermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8A1AAF20A137FC000AEAED /* LBXPermissions.swift */; };
+		EB8A1AB820A13840000AEAED /* ZYScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB8A1AB720A13840000AEAED /* ZYScanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		EB73B8B52094099100325ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB73B8B82094099100325ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB73B8BA2094099100325ECA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB8A1AA920A137FB000AEAED /* LBXScanNetAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanNetAnimation.swift; sourceTree = "<group>"; };
+		EB8A1AAA20A137FB000AEAED /* LBXScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanViewController.swift; sourceTree = "<group>"; };
+		EB8A1AAB20A137FB000AEAED /* LBXScanWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanWrapper.swift; sourceTree = "<group>"; };
+		EB8A1AAC20A137FB000AEAED /* LBXScanViewStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanViewStyle.swift; sourceTree = "<group>"; };
+		EB8A1AAD20A137FB000AEAED /* LBXScanView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanView.swift; sourceTree = "<group>"; };
+		EB8A1AAE20A137FB000AEAED /* LBXScanLineAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXScanLineAnimation.swift; sourceTree = "<group>"; };
+		EB8A1AAF20A137FC000AEAED /* LBXPermissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LBXPermissions.swift; sourceTree = "<group>"; };
+		EB8A1AB720A13840000AEAED /* ZYScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZYScanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +70,7 @@
 		EB73B8AD2094098F00325ECA /* ZYScaner */ = {
 			isa = PBXGroup;
 			children = (
+				EB73B8C020940AE100325ECA /* Classes */,
 				EB73B8AE2094098F00325ECA /* AppDelegate.swift */,
 				EB73B8B02094098F00325ECA /* ViewController.swift */,
 				EB73B8B22094098F00325ECA /* Main.storyboard */,
@@ -62,6 +79,29 @@
 				EB73B8BA2094099100325ECA /* Info.plist */,
 			);
 			path = ZYScaner;
+			sourceTree = "<group>";
+		};
+		EB73B8C020940AE100325ECA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EB8A1AB920A13852000AEAED /* Source */,
+				EB8A1AB720A13840000AEAED /* ZYScanViewController.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EB8A1AB920A13852000AEAED /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EB8A1AAB20A137FB000AEAED /* LBXScanWrapper.swift */,
+				EB8A1AAF20A137FC000AEAED /* LBXPermissions.swift */,
+				EB8A1AAE20A137FB000AEAED /* LBXScanLineAnimation.swift */,
+				EB8A1AA920A137FB000AEAED /* LBXScanNetAnimation.swift */,
+				EB8A1AAD20A137FB000AEAED /* LBXScanView.swift */,
+				EB8A1AAA20A137FB000AEAED /* LBXScanViewController.swift */,
+				EB8A1AAC20A137FB000AEAED /* LBXScanViewStyle.swift */,
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +175,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB8A1AB520A137FC000AEAED /* LBXScanLineAnimation.swift in Sources */,
+				EB8A1AB620A137FC000AEAED /* LBXPermissions.swift in Sources */,
+				EB8A1AB820A13840000AEAED /* ZYScanViewController.swift in Sources */,
+				EB8A1AB120A137FC000AEAED /* LBXScanViewController.swift in Sources */,
+				EB8A1AB420A137FC000AEAED /* LBXScanView.swift in Sources */,
+				EB8A1AB220A137FC000AEAED /* LBXScanWrapper.swift in Sources */,
+				EB8A1AB320A137FC000AEAED /* LBXScanViewStyle.swift in Sources */,
 				EB73B8B12094098F00325ECA /* ViewController.swift in Sources */,
+				EB8A1AB020A137FC000AEAED /* LBXScanNetAnimation.swift in Sources */,
 				EB73B8AF2094098F00325ECA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +329,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B2NL49SPV;
 				INFOPLIST_FILE = ZYScaner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +348,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B2NL49SPV;
 				INFOPLIST_FILE = ZYScaner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
